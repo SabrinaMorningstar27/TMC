@@ -4,6 +4,10 @@ local Window = Library.CreateLib("All-In-One Gui Made By ɹɐʇsɓuᴉuɹoW ɐu�
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Scripts")
 
+Section:NewButton("Mystqer Charmed Script", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/CharmedMystqer'),true))()
+end)
+
 Section:NewButton("Tre_Mainee Charmed Script", "", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/CharmedTM'),true))()
 end)
