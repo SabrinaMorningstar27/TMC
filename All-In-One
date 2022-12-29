@@ -4,12 +4,12 @@ local Window = Library.CreateLib("All-In-One Gui Made By ɹɐʇsɓuᴉuɹoW ɐu�
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Scripts")
 
-Section:NewButton("Mystqer Charmed Script", "", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/CharmedMystqer'),true))()
-end)
-
 Section:NewButton("Tre_Mainee Charmed Script", "", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/CharmedTM'),true))()
+end)
+
+Section:NewButton("Mystqer Charmed Script", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/CharmedMystqer'),true))()
 end)
 
 Section:NewButton("Vellexia Charmed Script", "", function()
@@ -20,8 +20,16 @@ Section:NewButton("Crossover Legends Script", "", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/CrossoverLegends'),true))()
 end)
 
+Section:NewButton("Dawn Of Sorcery Script", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/DawnofSorcery'),true))()
+end)
+
 Section:NewButton("Era Of Encanto Script", "", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/EraofEncanto'),true))()
+end)
+
+Section:NewButton("Fused Worlds Script", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/FusedWorlds'),true))()
 end)
 
 Section:NewButton("Every Witch Way Reborn! Script", "", function()
@@ -64,7 +72,7 @@ Section:NewButton("Stranger Things: Tragedies Script", "", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/STTragedies'),true))()
 end)
 
-Section:NewButton("SprinX Script", "", function()
+Section:NewButton("Sprinx Script", "", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/SprinX'),true))()
 end)
 
@@ -72,6 +80,9 @@ Section:NewButton("Starlix Club Script", "", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/Starlix%20Club'),true))()
 end)
 
+Section:NewButton("The Gifted Mutants Script", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/TheGiftedMutants'),true))()
+end)
 
 Section:NewButton("The Fairy Guardians Script", "", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/TheFairyGuardians'),true))()
@@ -92,16 +103,8 @@ Section:NewButton("Infinite Yield", "Admin", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-Section:NewButton("Btools", "", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/Btools"))()
-end)
-
-Section:NewButton("CMD Admin", "", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/CMD"))()
-end)
-
 Section:NewButton("Dark Dex", "Dex", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/Dex"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/0BL1V10NN/Morningstar-Scripts/main/Dex"))()
 end)
 
 Section:NewButton("Simple Spy", "Remote Spy", function()
@@ -109,7 +112,7 @@ Section:NewButton("Simple Spy", "Remote Spy", function()
 end)
 
 Section:NewButton("Hydroxide", "Remote Spy", function()
-    loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/Hydroxide', true))()
+    loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/0BL1V10NN/Morningstar-Scripts/main/Hydroxide', true))()
 end)
 
 Section:NewButton("In-Line Translator", "Translate", function()
@@ -120,7 +123,7 @@ local Tab = Window:NewTab("Credits")
 local Section = Tab:NewSection("Created by ɹɐʇsɓuᴉuɹoW ɐuᴉɹqɐS")
 
 local Section = Tab:NewSection("Toggle UI")
-Section:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.Equal, function()
+Section:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.Zero, function()
 	Library:ToggleUI()
 end)
 
