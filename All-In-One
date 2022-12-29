@@ -104,7 +104,7 @@ Section:NewButton("Infinite Yield", "Admin", function()
 end)
 
 Section:NewButton("Dark Dex", "Dex", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/0BL1V10NN/Morningstar-Scripts/main/Dex"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/Dex"))()
 end)
 
 Section:NewButton("Simple Spy", "Remote Spy", function()
@@ -112,7 +112,7 @@ Section:NewButton("Simple Spy", "Remote Spy", function()
 end)
 
 Section:NewButton("Hydroxide", "Remote Spy", function()
-    loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/0BL1V10NN/Morningstar-Scripts/main/Hydroxide', true))()
+    loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/TheMorningstarCircle/Spellman/main/Hydroxide', true))()
 end)
 
 Section:NewButton("In-Line Translator", "Translate", function()
