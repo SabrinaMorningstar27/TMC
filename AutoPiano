@@ -52,16 +52,13 @@ Section:NewToggle("Change Someone Hair", "Keybind (2)", function()
             if player then
 
                 
-                local targetPlayer = game:GetService("Players"):FindFirstChild(playerName)
-
-                if targetPlayer and targetPlayer.Character then
-                    local args = {
-    [1] = targetPlayer.Character,
-    [2] = game:GetService("Players").LocalPlayer.Character.Scissors,
-    [3] = "A"
-}
-
-game:GetService("ReplicatedStorage").hair_storage.hair_events.changeHairEvent:FireServer(unpack(args))
+                local args = {
+                    [1] = (player),
+                    [2] = game:GetService("Players").LocalPlayer.Character.Scissors,
+                    [3] = "A"
+                    }
+                    
+                    game:GetService("ReplicatedStorage").hair_storage.hair_events.changeHairEvent:FireServer(unpack(args))
 
 
             end
@@ -83,11 +80,8 @@ Section:NewTextBox("Change Someone Hair", "", function(txt)
     local player = findPlayer(msg)
     local CHAR = player.Character
 
-    local targetPlayer = game:GetService("Players"):FindFirstChild(playerName)
-
-    if targetPlayer and targetPlayer.Character then
         local args = {
-[1] = targetPlayer.Character,
+[1] = (player),
 [2] = game:GetService("Players").LocalPlayer.Character.Scissors,
 [3] = "A"
 }
